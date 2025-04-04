@@ -5,8 +5,6 @@ export const createHTMLElement = (element, { ...args }) => {
     return null;
   }
 
-  console.log("content", args.content instanceof Array);
-
   if (args.content instanceof HTMLElement) {
     elem.appendChild(args.content);
   } else if (args.content instanceof Array) {
